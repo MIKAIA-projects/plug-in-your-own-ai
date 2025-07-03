@@ -22,3 +22,11 @@ so far 2 examples are available.
 - one example demonstrates how to use the pixel-access-API and generated-overlay-API. It does not do a meaningful analysis.
 - another example analyzes the selected ROI patch by patch with a TensorFlow classification model
 - (coming soon) an example that carries out segmentation using facebook's segment-anything-model ([SAM](https://github.com/facebookresearch/segment-anything)) 
+
+## Connect your python script to MIKAIA
+To run plugin, you have to execute following command in your IDE terminal:
+````
+python -m mikaia_plugin_api.script_service_server
+````
+
+Then start MIKAIA and select Plug-in your own AI App. Select your script in Configuration Tab under "User scripts" dropdown menu.
