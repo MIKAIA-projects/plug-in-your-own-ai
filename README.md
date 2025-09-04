@@ -1,14 +1,14 @@
 ## MIKAIA Plug-in your-own AI App
 MIKAIA comprises off-the-shelf image analysis Apps that are ready to be used, but it also can be extended by users<br>
- - medical users can use the AI Author to interactively train new AI models in MICAIA within minutes. Since the AI Author is based on a Few Shot Learning AI method, it can be trained using only very few annotations<br>
- - technical users can plug in their own AI scripts into MIKAIA and this way make use of the infrastructure provided by MIKAIA. Finanally, they can deploy their AI models and put them into a pathologist's hands, who does not have a linux laptop and cannot run a Python or Matlab script on their own computer. Instead they can use MIKAIA as a UI, which invokes the script and provides APIs to it for reading in pixels or visualizing overlays.  
+ - medical users can use the AI Author to interactively train new AI models in MIKAIA within minutes. Since the AI Author is based on a Few Shot Learning AI method, it can be trained using only very few annotations<br>
+ - technical users can plug in their own AI scripts into MIKAIA and this way make use of the infrastructure provided by MIKAIA. Finally, they can deploy their AI models and put them into a pathologist's hands, who does not have a linux laptop and cannot run a Python or Matlab script on their own computer. Instead they can use MIKAIA as a UI, which invokes the script and provides APIs to it for reading in pixels or visualizing overlays.  
 
 ## plugin scripting language
 The user plugin will typically be a Python file, but it could also be an R script, Matlab script or any other executable. <br>
 The reason is that MIKAIA does not directly invoke the plugin script. Instead, it turns to a man-in-the-middle, the "script-broker", which discovers local scripts and reports them to MIKAIA, and which invokes the local script as a new process. Afterward, the plugin can communicate directly with the REST server hosted by MIKAIA. 
 
 ## where does the plugin run
-The the communication protocoll is REST, the plugin can be executed on the same computer as MIKAIA, inside a Docker or on another computer in the network. 
+The communication protocol is REST, the plugin can be executed on the same computer as MIKAIA, inside a Docker or on another computer in the network. 
 
 ## what is open sourced?
 - MIKAIA itself is not open source, but it can be downloaded for free from www.mikaia.ai.
