@@ -18,9 +18,11 @@ The the communication protocoll is REST, the plugin can be executed on the same 
 - multiple example client plugins are also open sourced and can be found in this repository. As part of one of the examples, a trained AI model (TensorFlow framework) is also open sourced and included in this repository.
 
 ## what examples are available?
-so far 2 examples are available. 
+so far 3 examples are available. 
 - one example demonstrates how to use the pixel-access-API and generated-overlay-API. It does not do a meaningful analysis.
-- another example analyzes the selected ROI patch by patch with a TensorFlow classification model
+- second example segments cells in a selected ROI using pretrained Cellpose model. It demonstrates how to use the pixel-access-API and generated-overlay-API.
+- third example analyzes the selected ROI patch by patch with a TensorFlow classification model
+- (coming soon) an example of using a foundation model (like UNI or CONCH) to extract image features and cluster them
 - (coming soon) an example that carries out segmentation using facebook's segment-anything-model ([SAM](https://github.com/facebookresearch/segment-anything)) 
 
 ## Connect your python script to MIKAIA
